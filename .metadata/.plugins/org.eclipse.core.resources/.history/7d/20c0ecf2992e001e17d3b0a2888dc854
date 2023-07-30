@@ -1,0 +1,16 @@
+package collectionLab2;
+
+import java.util.Arrays;
+import java.util.LinkedList;
+
+public class ErrToArray {
+	
+	public ErrToArray() {
+		String colors[] = { "black", "blue", "yellow", "red","green", "purple", "white"};
+		LinkedList<String> links = new LinkedList<String>();
+		
+		links.add("white");
+		links.add("red");
+		links.add("blue");
+	}
+}

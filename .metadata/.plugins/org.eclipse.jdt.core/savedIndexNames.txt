@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/home/sejuti/Desktop/OOP/.metadata/.plugins/org.eclipse.jdt.core
+732731266.index
+424210582.index
+1865797976.index

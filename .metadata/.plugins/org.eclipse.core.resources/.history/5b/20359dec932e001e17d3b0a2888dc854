@@ -1,0 +1,52 @@
+package collectionLab2;
+
+import java.util.List;
+import java.util.LinkedList;
+import java.util.ListIterator;
+import java.util.*;
+
+public class ListTest 
+	{
+	   private static final String colors[] = { "black", "yellow", 
+	      "green", "blue", "violet", "silver" };
+	   private static final String colors2[] = { "gold", "white", 
+	      "brown", "blue", "gray", "silver" };
+	                  
+	   public ListTest()
+	   {
+	      List< String > list1 = new LinkedList< String >(); 
+	      List< String > list2 = new LinkedList< String >();
+	
+	      for ( String color : colors )
+          list1.add( color);	
+	      
+
+		for (String color : colors2)
+			list2.add(color);
+
+		list1.addAll(list2); // concatenate lists
+		list2 = null; // release resources
+		printList(list1); // print list1 elements
+		
+		
+
+		toUpperCase(list1); 
+		printList(list1); // print list1 elements
+
+		System.out.print("\nDeleting elements 4 to 6...");
+		removeItems(list1, 4, 7); // remove items 4-7 from list
+		printList(list1); // print list1 elements
+		printReversedList(list1); // print list in reverse order
+	} // end ListTest constructor
+
+	// output List contents
+	public void printList(List<String> list) {
+		System.out.println("\nlist: ");
+
+		for (String color : list)
+			System.out.printf("%s ", color);
+
+		System.out.println();
+	} // end method printList
+
+}
