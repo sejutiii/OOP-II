@@ -1,0 +1,33 @@
+Collecion framework -> DS interfaces in java
+	- set
+	- list
+	- map
+	- queue
+    
+/***   main method static -> no object creation hassle -> no confusion for JVM -> starting point of the program   ***/
+
+Arrays class -> static class
+	- static methods -> no instance creation
+	- high level methods -> implementation unknown to the user -> encapsulation
+	- binarySearch, sort, fill, equals
+
+System class -> static class
+	- arrayCopy
+     
+List -> interface -> can contain duplicate values -> sequence
+	- ArrayList
+	- LinkedList
+	- Vector
+	
+	-> ArrayList is faster than Vectors because ArrayLists do not have the overhead of thread synchronization
+	
+	/*** Synchronization -> shared block -> major difference between ArrayList and vector ***/
+
+<Generics> -> specifies the type of data (wrapper class) for the object in use
+
+/*** Make the subclass with the super class reference -> standard practice ***/
+
+Iteraor class -> iterator to a colection 
+	- Iterator<String> iterator= collection1.iterator()
+	- iterator.hasNext(), iterator.next(), iterator.remove()
+
